@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+body {
+  font-family: "Comfortaa", sans-serif;
+  overflow-x: hidden;
+  margin-left: 101vw;
+  margin-top: 1vw;
+  /*opacity: 0;*/
+  transition: margin-left 0.5s, opacity 0.5s;
+}
+#pin {
+  position: absolute;
+  z-index: -1;
+  background-color: #66b9f4;
+}
+.article {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2vw;
+  display: inline-block;
+}
+.article:nth-child(odd) {
+  left: 1vw;
+}
+.article:nth-child(even) {
+  right: 1vw;
+}
+.x {
+  padding: 2vw;
+}
+.artContent {
+  color: black;
+  text-decoration: none;
+}
+/*.artHeadlink:link > .seen {
+  opacity: 0;
+  font-size: 30;
+}*/
+.seen {
+  opacity: 1;
+}
+.artHeadlink:visited > .seen {
+  opacity: 1;
+}
+.z {
+  display: inline;
+}
+#waiting {
+  position: absolute;
+  z-index: -100;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+  transition: margin-top 0.5s, opacity 0.5s;
+  text-align: center;
+}
+#errorLoading {
+  position: absolute;
+  z-index: -100;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+  transition: margin-top 0.5s, opacity 0.5s;
+  text-align: center;
+}
+#headerimg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100vw;
+  height: 26vw;
+  margin-left: 100vw;
+  margin-top: 0vw;
+  transition: margin-left 0.5s;
+  outline-width: 3px;
+  outline-color: #ffffff;
+}
+.header {
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0, 0, 1vw, 1vw;
+}
+h1.header {
+  font-size: 3vw;
+  vertical-align: top;
+}
+p.header {
+  font-size: 2vw;
+  vertical-align: bottom;
+}
+#content {
+  position: absolute;
+  z-index: -1;
+  margin-left: 102vw;
+  margin-top: 2vw;
+  width: 100vw;
+  transition: margin-left 0.5s;
+}
+.seen {
+  font-size: 10;
+}

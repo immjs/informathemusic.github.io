@@ -1,0 +1,69 @@
+var content = document.getElementById("content");
+var colors = ["#F08080", "#FFC0CB", "#adff2f", "#ADD8E6", "#F0E68C"];
+function getRandomInt(min, max) {
+  return min + Math.floor(Math.random() * (max - min + 1));
+}
+/*function levelNRandomness(n, min, max, arr, genN) {
+  if (!Array.isArray(arr)) {
+    arr = [];
+    for (var i = 0; i < n; i++) {
+      arr.push(getRandomInt(min, max));
+    }
+  }
+  if (isNaN(genN)) {
+    genN = n;
+    n = 0;
+  }
+  console.log(n,genN)
+  for (i = 0; i < n; i++) {
+    arr.push(getRandomInt(min, max));
+  }
+  return n === genN ? arr : levelNRandomness(n++, min, max, arr, genN);
+}
+console.log(levelNRandomness(6,0,10));*/
+var xhr = new XMLHttpRequest();
+var dom = "https://api.npont.io/c9cd93525cf4fdc39073";
+xhr.open("GET", dom, true);
+xhr.onerror = () => {
+  return (document.body.innerHTML +=
+    '<h3 id="errorLoading">Could not reach ' + dom + "</h3>");
+};
+xhr.onload = function() {
+  if (this.status !== 200) {
+    return (document.body.innerHTML = "<h1>Could not reach" + dom + "</h1>");
+  }
+  var data = JSON.parse(this.response);
+  let k = data.length;
+  for (var i = k; i > 0; i--) {
+    var p = document.createElement("div");
+    content.appendChild(p);
+    p.outerHTML =
+      '<div class="article" style="background-color:' +
+      colors[getRandomInt(0, colors.length - 1)] +
+      ';"><div class="x">\n<h1>' +
+      (i === k ? "\nNouveau:\n" : "") +
+      '</h1>\n<a href="/Articles/article' +
+      i +
+      "/article" +
+      i +
+      '.html" class="artHeadlink">\n<h2 class="z">' +
+      data[i - 1].title +
+      '<h6 class="seen z" style="opacity:0"><span class="seenchild">Deja vu</span></h6></h2>\n</a>\n<a href="/Articles/article' +
+      i +
+      "/article" +
+      i +
+      '.html" class="artContent">\n<p>' +
+      data[i - 1].summary.split("\n").join("<br>") +
+      "</p>\n</a>\n</div>\n</div>";
+    console.log(content);
+  }
+  document.body.style.marginLeft = "1vw";
+  document.body.style.opacity = "1";
+  document.getElementById("waiting").style.opacity = "0";
+  document.getElementById("headerimg").style.margin = "0vw";
+  document.getElementById("content").style.margin = "1vw";
+  //https://jsonstorage.net/api/items/6618ee1d-f14c-4c17-8691-ff17652e7668
+  //'https://www.random.org/integers/?num='5'&min=0&max='100'&col='8'&base=10&format=plain&rnd=new'
+};
+
+xhr.send(null);
