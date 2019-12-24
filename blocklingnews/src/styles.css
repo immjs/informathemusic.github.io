@@ -5,7 +5,7 @@ body {
   margin-left: 101vw;
   margin-top: 1vw;
   /*opacity: 0;*/
-  transition: margin-left 0.5s, opacity 0.5s;
+  transition: margin-left 0.5s, opacity 0.5s;²
 }
 #pin {
   position: absolute;
@@ -60,8 +60,8 @@ body {
   z-index: -1;
   width: 100vw;
   height: 26vw;
-  margin-left: 100vw;
-  margin-top: 0vw;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
   transition: margin-left 0.5s;
   outline-width: 3px;
   outline-color: #ffffff;
