@@ -20,9 +20,10 @@ body {
 .article:nth-child(odd) {
   left: 1vw;
 }
-/*.article:nth-child(even) {
+.article:nth-child(even) {
+  float:right;
   right: 1vw;
-}*/
+}
 .x {
   padding: 2vw;
 }
