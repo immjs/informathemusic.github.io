@@ -1,3 +1,4 @@
+window.onload=()=>{
 var content = document.getElementById("content");
 var colors = ["#F08080", "#FFC0CB", "#adff2f", "#ADD8E6", "#F0E68C"];
 function getRandomInt(min, max) {
@@ -93,3 +94,4 @@ xhr.onload = async function() {
 };
 
 xhr.send(null);
+}
