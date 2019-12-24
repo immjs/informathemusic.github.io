@@ -18,11 +18,12 @@ body {
   display: inline-block;
 }
 .article:nth-child(odd) {
-  left: 1vw;
+  float:left;
+  margin-left: 1vw;
 }
 .article:nth-child(even) {
   float:right;
-  right: 1vw;
+  margin-right: 1vw;
 }
 .x {
   padding: 2vw;
