@@ -19,11 +19,10 @@ body {
 }
 .article:nth-child(odd) {
   float:left;
-  left: 1vw;
 }
 .article:nth-child(even) {
   float:right;
-  right: 1vw;
+  margin-left:0;
 }
 .x {
   padding: 2vw;
