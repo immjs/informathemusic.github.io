@@ -2,7 +2,7 @@ window.onload=()=>{
 var content = document.getElementById("content");
 var colors = ["#F08080", "#FFC0CB", "#adff2f", "#ADD8E6", "#F0E68C"];
 //	
-var ucClors = ["#CD5C5C", "#ff8da1", "#32CD32", "#adcae6", "#f0d58c"];
+var uColors = ["#CD5C5C", "#ff8da1", "#32CD32", "#adcae6", "#f0d58c"];
 function getRandomInt(min, max) {
   return min + Math.floor(Math.random() * (max - min + 1));
 }
@@ -72,7 +72,7 @@ xhr.onload = async function() {
       '<div class="article" style="background-color:' +
       colors[r] +
       ';box-shadow: 1vw 1vw '+
-      +
+      uColors[r]+
       ';"><div class="x">\n<h1>' +
       (i === k ? "\nNouveau:\n" : "") +
       '</h1>\n<a href="/Articles/article' +
