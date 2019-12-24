@@ -60,7 +60,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 26vw;
-  margin-left: 50vw;
+  margin-left: 150vw;
   transform: translate(-50%, -50%);
   transition: margin-left 0.5s;
   outline-width: 3px;
