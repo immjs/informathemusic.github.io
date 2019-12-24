@@ -77,12 +77,12 @@ body {
 h1.header {
   font-size: 3vw;
   vertical-align: top;
-  width:inherit;
+  height:inherit;
 }
 p.header {
   font-size: 2vw;
   vertical-align: bottom;
-  width:inherit;
+  height:inherit;
 }
 #content {
   position: absolute;
