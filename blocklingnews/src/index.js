@@ -93,7 +93,7 @@ xhr.onload = async function() {
   document.body.style.opacity = "1";
   document.getElementById("waiting").style.opacity = "0";
   document.getElementById("headerimg").style.marginLeft = "50vw";
-  document.getElementById("content").style.margin = "50vw";
+  document.getElementById("content").style.marginLeft = "50vw";
   //https://jsonstorage.net/api/items/6618ee1d-f14c-4c17-8691-ff17652e7668
   //'https://www.random.org/integers/?num='5'&min=0&max='100'&col='8'&base=10&format=plain&rnd=new'
 };
