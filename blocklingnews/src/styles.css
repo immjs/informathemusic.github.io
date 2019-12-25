@@ -5,7 +5,7 @@ body {
   margin-left: 101vw;
   margin-top: 1vw;
   /*opacity: 0;*/
-  transition: margin-left 0.5s, opacity 0.5s;²
+  transition: margin-left 0.5s, opacity 0.5s;
 }
 #pin {
   position: absolute;
