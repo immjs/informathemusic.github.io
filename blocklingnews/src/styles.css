@@ -87,11 +87,13 @@ p.header {
   height:inherit;
 }
 #content {
+  margin-left: 150vw;
+  transform: translate(-50%, 0);
   position: absolute;
   z-index: -1;
   margin-left: 102vw;
   margin-top: 2vw;
-  width: 98vw;
+  width: 94vw;
   transition: margin-left 0.5s;
 }
 .seen {
