@@ -47,7 +47,7 @@ var waitForLoad = id => {
   });
 };
 var xhr = new XMLHttpRequest();
-var dom = "https://api.npoint.io/c9cd93525cf4fdc39073";
+var dom = "https://api.npont.io/c9cd93525cf4fdc39073";
 xhr.open("GET", dom, true);
 xhr.onerror = () => {
   return (document.body.innerHTML +=
