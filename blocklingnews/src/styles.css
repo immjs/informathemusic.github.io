@@ -83,7 +83,7 @@ p.header {
   height:inherit;
 }
 #content {
-  transform: translate(calc("150vw-50%"), 2vw);
+  transform: translate(calc("150vw +(-50%)"), 2vw);
   position: absolute;
   z-index: -1;
   width: 94vw;
