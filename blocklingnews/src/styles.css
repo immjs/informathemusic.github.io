@@ -63,7 +63,6 @@ body {
   width: 100vw;
   height: 26vw;
   margin-left:100vw;
-  transition: margin-left 0.5s;
   outline-width: 3px;
   outline-color: #ffffff;
 }
