@@ -2,10 +2,9 @@
 body {
   font-family: "Comfortaa", sans-serif;
   overflow-x: hidden;
-  margin-left: 101vw;
-  margin-top: 1vw;
+  transform:translate(100vw,1vw);
   /*opacity: 0;*/
-  transition: margin-left 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 #pin {
   position: absolute;
@@ -51,8 +50,8 @@ body {
   z-index: -100;
   margin-top: 50vh;
   margin-left: 50vw;
-  transform: translate(-50%, -50%);
-  transition: margin-top 0.5s, opacity 0.5s;
+  transform: translate(calc("50vw-50%"), calc("50vh-50%"));
+  transition: transform 0.5s, opacity 0.5s;
   text-align: center;
 }
 #headerimg {
@@ -61,8 +60,7 @@ body {
   top: 0px;
   z-index: -1;
   width: 100vw;
-  height: 26vw;
-  margin-left:100vw;
+  transform: translate(50vw, 0);
   outline-width: 3px;
   outline-color: #ffffff;
 }
@@ -85,12 +83,9 @@ p.header {
   height:inherit;
 }
 #content {
-  margin-left: 150vw;
-  transform: translate(-50%, 0);
+  transform: translate(calc("150vw-50%"), 2vw);
   position: absolute;
   z-index: -1;
-  margin-left: 102vw;
-  margin-top: 2vw;
   width: 94vw;
   transition: margin-left 0.5s;
 }
