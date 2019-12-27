@@ -60,7 +60,7 @@ body {
   top: 0px;
   z-index: -1;
   width: 100vw;
-  transform: translate(50vw, 0);
+  transform: translate(100vw, 0);
   outline-width: 3px;
   outline-color: #ffffff;
 }
