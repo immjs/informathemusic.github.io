@@ -70,8 +70,8 @@ xhr.onload = async function() {
     content.appendChild(p);
     p.outerHTML =
         '<article class="article" style="background-color:'+colors[r]+';box-shadow: 1vw,1vw'+uColors[r]+'">'+
-            '<h3 class="article__title">'+data.id+'</h3>'+
-            '<p class="article__content">'+data.summary+'</p>'+
+            '<h3 class="article__title">'+data[i-1].id+'</h3>'+
+            '<p class="article__content">'+data[i-1].summary+'</p>'+
         '</article>'
     p.style.opacity=1;
   }
