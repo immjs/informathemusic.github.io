@@ -55,10 +55,8 @@ body {
   text-align: center;
 }
 #headerimg {
-  position: absolute;
   left: 0px;
   top: 0px;
-  z-index: -1;
   width: 100vw;
   transform: translate(100vw, 0);
   outline-width: 3px;
