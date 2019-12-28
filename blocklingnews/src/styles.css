@@ -95,6 +95,9 @@ p.header {
   width: 94vw;
   transition: transform 0.5s;
 }
+.content>*{
+  margin:5px;
+}
 .seen {
   font-size: 10;
 }
