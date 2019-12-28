@@ -72,7 +72,7 @@ xhr.onload = async function() {
         '<a href="./Articles/Article'+i+'" class="article" style="background-color:'+colors[r]+';box-shadow: 1vw 1vw '+uColors[r]+'">'+
             '<h3 class="article__title">'+(i===k?"Nouveau: ":"")+data[i-1].id+'</h3>'+
             '<p class="article__content">'+data[i-1].summary.split('\n').join('</br>')+'</p>'+
-        '</article>'
+        '</a>'
     p.style.opacity=1;
   }
   //https://jsonstorage.net/api/items/6618ee1d-f14c-4c17-8691-ff17652e7668
