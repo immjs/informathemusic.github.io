@@ -2,7 +2,7 @@
 body  {
   font-family: "Comfortaa", sans-serif;
   /*overflow-x: hidden;*/
-  transform:translate(100vw,1vw);
+  transform:translate(100vw,0px);
   /*opacity: 0;*/
   transition: transform 0.5s, opacity 0.5s;
 }
