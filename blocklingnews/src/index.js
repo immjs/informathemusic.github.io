@@ -69,7 +69,7 @@ xhr.onload = async function() {
     var p = document.createElement("div");
     content.appendChild(p);
     p.outerHTML =
-      '<div class="article" style="background-color:' +
+      '<div class="sumo">\n<div class="article" style="background-color:' +
       colors[r] +
       ';box-shadow: 1vw 1vw '+
       uColors[r]+
@@ -87,7 +87,7 @@ xhr.onload = async function() {
       i +
       '.html" class="artContent">\n<p>' +
       data[i - 1].summary.split("\n").join("<br>") +
-      "</p>\n</a>\n</div>\n</div>";
+      "</p>\n</a>\n</div>\n</div>\n</div>";
   }
   document.body.style.transform = "translate(1vw)";
   document.body.style.opacity = "1";
