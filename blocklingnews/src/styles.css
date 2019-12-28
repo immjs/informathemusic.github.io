@@ -71,11 +71,15 @@ body {
   height: 26vw;
 }
 h1.header {
+  position: absolute;
+  z-index: 2;
   font-size: 3vw;
   vertical-align: top;
   height:inherit;
 }
 p.header {
+  position: absolute;
+  z-index: 2;
   font-size: 2vw;
   vertical-align: bottom;
   height:inherit;
