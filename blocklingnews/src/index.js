@@ -69,7 +69,7 @@ xhr.onload = async function() {
     var p = document.createElement("div");
     content.appendChild(p);
     p.outerHTML =
-        '<article class="article" style="background-color:'+colors[r]+';box-shadow: 1vw,1vw'+uColors[r]+'">'+
+        '<article class="article" style="background-color:'+colors[r]+';box-shadow: 1vw 1vw '+uColors[r]+'">'+
             '<h3 class="article__title">'+data[i-1].id+'</h3>'+
             '<p class="article__content">'+data[i-1].summary+'</p>'+
         '</article>'
