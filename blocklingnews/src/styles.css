@@ -22,10 +22,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: -3rem;
-  text-decoration:none;
 }
 
 .article {
+  text-decoration:none;
   max-width: 500px;
   padding: 1rem;
   margin: 1rem;
