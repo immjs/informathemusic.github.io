@@ -99,6 +99,8 @@ p.header {
   margin:5px;
 }
 .sumo{
+  position: absolute;
+  z-index: -1;
 width:100vw;}
 .seen {
   font-size: 10;
