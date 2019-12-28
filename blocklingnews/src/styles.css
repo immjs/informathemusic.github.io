@@ -1,107 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-body  {
-  font-family: "Comfortaa", sans-serif;
-  /*overflow-x: hidden;*/
-  transform:translate(100vw,0px);
-  /*opacity: 0;*/
-  transition: transform 0.5s, opacity 0.5s;
-}
-*{
-
-  padding:0;
-  margin:0;}
-#pin {
-  position: absolute;
-  z-index: -1;
-  background-color: #66b9f4;
-}
-.article {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 2vw;
-  display: inline-block;
-}
-.article:nth-child(odd) {
-  float:left;
-  margin-left:2vw;
-}
-.article:nth-child(even) {
-  float:right;
-  margin-left:0;
-  margin-right:0;
-}
-.x {
-  padding: 20px;
-}
-.artContent {
-  color: black;
-  text-decoration: none;
-}
-/*.artHeadlink:link > .seen {
-  opacity: 0;
-  font-size: 30;
-}*/
-.seen {
-  opacity: 1;
-}
-.artHeadlink:visited > .seen {
-  opacity: 1;
-}
-.z {
-  display: inline;
-}
-#waiting {
-  position: absolute;
-  z-index: -100;
-  margin-top: 50vh;
-  margin-left: 50vw;
-  transform: translate(calc("50vw-50%"), calc("50vh-50%"));
-  transition: transform 0.5s, opacity 0.5s;
-  text-align: center;
-}
-#headerimg {
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  transform: translate(100vw, 0);
-  outline-width: 3px;
-  outline-color: #ffffff;
-}
-.header {
-  padding: 20px;
-  color: #ffffff;
-  text-align: center;
+body {
   margin: 0;
-  width: 100vw;
-  height: 26vw;
+  font-family: sans-serif;
 }
-h1.header {
-  position: absolute;
-  z-index: 2;
-  font-size: 3vw;
-  vertical-align: top;
-  height:inherit;
+
+.header {
+  background-image: url(../Assets/HeaderBlockling.png);
+  font-family:"Comfortaa", sans-serif;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
 }
-p.header {
-  position: absolute;
-  z-index: 2;
-  font-size: 2vw;
-  vertical-align: bottom;
-  height:inherit;
+
+.header__title {
+  margin: 0;
 }
-#content {
-  transform: translate(calc("150vw +(-50%)"), 2vw);
-  position: absolute;
-  z-index: -1;
-  width: 94vw;
-  transition: transform 0.5s;
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -3rem;
 }
-.content > *{
-  margin:5px;
+
+
+
+.article {
+  background: #eee;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
 }
-.sumo{
-  position: absolute;
-  z-index: -1;
-width:100vw;}
-.seen {
-  font-size: 10;
-}
+
