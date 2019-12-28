@@ -95,7 +95,7 @@ p.header {
   width: 94vw;
   transition: transform 0.5s;
 }
-.content>*{
+.content > *{
   margin:5px;
 }
 .seen {
