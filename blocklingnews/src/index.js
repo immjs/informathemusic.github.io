@@ -1,5 +1,5 @@
 window.onload=()=>{
-var content = document.getElementById("content");
+var content = document.getElementById("articles");
 var colors = ["#F08080", "#FFC0CB", "#adff2f", "#ADD8E6", "#F0E68C"];
 //	
 var uColors = ["#CD5C5C", "#ff8da1", "#32CD32", "#adcae6", "#f0d58c"];
@@ -69,11 +69,11 @@ xhr.onload = async function() {
     var p = document.createElement("div");
     content.appendChild(p);
     p.outerHTML =
-      
         '<article class="article" style="color:'+colors[r]+';background-color:'+uColors[r]+'">'+
             '<h3 class="article__title">'+data.id+'</h3>'+
             '<p class="article__content">'+data.summary+'</p>'+
         '</article>'
+    p.style.opacity=1;
   }
   //https://jsonstorage.net/api/items/6618ee1d-f14c-4c17-8691-ff17652e7668
   //'https://www.random.org/integers/?num='5'&min=0&max='100'&col='8'&base=10&format=plain&rnd=new'
