@@ -11,7 +11,7 @@ body  {
   padding:0;
   margin:0;}
 #pin {
-  position: relative;
+  position: absolute;
   z-index: -1;
   background-color: #66b9f4;
 }
@@ -50,7 +50,7 @@ body  {
   display: inline;
 }
 #waiting {
-  position: relative;
+  position: absolute;
   z-index: -100;
   margin-top: 50vh;
   margin-left: 50vw;
@@ -75,14 +75,14 @@ body  {
   height: 26vw;
 }
 h1.header {
-  position: relative;
+  position: absolute;
   z-index: 2;
   font-size: 3vw;
   vertical-align: top;
   height:inherit;
 }
 p.header {
-  position: relative;
+  position: absolute;
   z-index: 2;
   font-size: 2vw;
   vertical-align: bottom;
@@ -90,7 +90,7 @@ p.header {
 }
 #content {
   transform: translate(calc("150vw +(-50%)"), 2vw);
-  position: relative;
+  position: absolute;
   z-index: -1;
   width: 94vw;
   transition: transform 0.5s;
