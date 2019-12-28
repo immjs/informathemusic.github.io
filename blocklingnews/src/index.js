@@ -71,7 +71,7 @@ xhr.onload = async function() {
     p.outerHTML =
         '<article class="article" style="background-color:'+colors[r]+';box-shadow: 1vw 1vw '+uColors[r]+'">'+
             '<h3 class="article__title">'+data[i-1].id+'</h3>'+
-            '<p class="article__content">'+data[i-1].summary+'</p>'+
+            '<p class="article__content">'+data[i-1].summary.split('\n').join('</br>')+'</p>'+
         '</article>'
     p.style.opacity=1;
   }
