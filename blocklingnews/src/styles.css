@@ -98,6 +98,8 @@ p.header {
 .content > *{
   margin:5px;
 }
+.sumo{
+width:100vw;}
 .seen {
   font-size: 10;
 }
