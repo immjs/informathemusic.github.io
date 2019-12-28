@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 body {
   font-family: "Comfortaa", sans-serif;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   transform:translate(100vw,1vw);
   /*opacity: 0;*/
   transition: transform 0.5s, opacity 0.5s;
