@@ -6,6 +6,7 @@ body {
 
 .header {
   background-image: url(../Assets/HeaderBlockling.jpg);
+  background-repeat: no-repeat;
   font-family:"Comfortaa", sans-serif;
   color: white;
   padding: 5rem 0;
