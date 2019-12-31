@@ -11,10 +11,9 @@
         var results = regex.exec( url );
         return results == null ? null : results[1];
       }
-      let resp=getParams('resp', location.href)
+      let resp=JSON.parse(getParams('resp'))
       document.head.innerHtml+="<title>"+resp.title+"</title>"
       window.onload=()=>{
-        document
       }
     </script>
     <style>
@@ -25,6 +24,8 @@
         transition: clip-path 1s;
         top:5vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #l2{
         position:absolute;
@@ -33,18 +34,24 @@
         transition: border-radius 1s;
         top:5vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #likeAnim{
         position:absolute;
         z-index:-2;
         top:5vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #like{
         position:absolute;
         z-index:0;
         top:5vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #s1{
         position:absolute;
@@ -53,6 +60,8 @@
         transition: clip-path 1s;
         top:10vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #s2{
         position:absolute;
@@ -61,18 +70,24 @@
         transition: border-radius 1s;
         top:10vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #shareAnim{
         position:absolute;
         z-index:-2;
         top:10vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
       #share{
         position:absolute;
         z-index:0;
         top:10vw;
         left:5vw;
+        width:5vw;
+        height:5vw;
       }
     </style>
   </head>
