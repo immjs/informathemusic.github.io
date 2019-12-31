@@ -11,7 +11,7 @@
         var results = regex.exec( url );
         return results == null ? null : results[1];
       }
-      let resp=JSON.parse(getParams('resp'))
+      let resp=JSON.parse(decodeURI(getParams('resp')))
       document.head.innerHtml+="<title>"+resp.title+"</title>"
       window.onload=()=>{
       }
