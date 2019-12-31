@@ -17,8 +17,76 @@
         document
       }
     </script>
+    <style>
+      #l1{
+        position:absolute;
+        z-index:-3;
+        clip-path: circle(50% at 50% 50%);
+        transition: clip-path 1s;
+        top:5vw;
+        left:5vw;
+      }
+      #l2{
+        position:absolute;
+        z-index:-1;
+        border-radius: 50%;
+        transition: border-radius 1s;
+        top:5vw;
+        left:5vw;
+      }
+      #likeAnim{
+        position:absolute;
+        z-index:-2;
+        top:5vw;
+        left:5vw;
+      }
+      #like{
+        position:absolute;
+        z-index:0;
+        top:5vw;
+        left:5vw;
+      }
+      #s1{
+        position:absolute;
+        z-index:-3;
+        clip-path: circle(50% at 50% 50%);
+        transition: clip-path 1s;
+        top:10vw;
+        left:5vw;
+      }
+      #s2{
+        position:absolute;
+        z-index:-1;
+        border-radius: 50%;
+        transition: border-radius 1s;
+        top:10vw;
+        left:5vw;
+      }
+      #shareAnim{
+        position:absolute;
+        z-index:-2;
+        top:10vw;
+        left:5vw;
+      }
+      #share{
+        position:absolute;
+        z-index:0;
+        top:10vw;
+        left:5vw;
+      }
+    </style>
   </head>
   <body>
-    
+    <div id="l1" class="l"></div>
+    <div id="l2" class="l"></div>
+    <img id="likeAnim" src="" class="l" />
+    <img id="like" src="" class="l" />
+    <div id="s1" class="l"></div>
+    <div id="s2" class="l"></div>
+    <img id="shareAnim" src="" class="l" />
+    <img id="share" src="" class="l" />
+    <div id="content">
+      
+    </div>
   </body>
 </html>
