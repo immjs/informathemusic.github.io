@@ -12,7 +12,7 @@
         return results == null ? null : results[1];
       }
       let resp=JSON.parse(decodeURI(getParams('resp')))
-      document.head.innerHtml+="<title>"+resp.title+"</title>"
+      document.title=resp.title;
       window.onload=()=>{
       }
     </script>
