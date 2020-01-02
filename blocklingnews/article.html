@@ -18,10 +18,10 @@
     </script>
     <style>
       #l1{
+        mask: url(./Assets/cssMask.png);
         position:absolute;
-        z-index:-3;
-        clip-path: circle(50% at 50% 50%);
-        transition: clip-path 1s;
+        z-index:-2;
+        transition: width 1s,height 1s;
         top:5vw;
         left:5vw;
         width:5vw;
@@ -41,7 +41,7 @@
       }
       #likeAnim{
         position:absolute;
-        z-index:-2;
+        z-index:-3;
         top:5vw;
         left:5vw;
         width:5vw;
@@ -57,9 +57,9 @@
       }
       #s1{
         position:absolute;
-        z-index:-3;
-        clip-path: circle(50% at 50% 50%);
-        transition: clip-path 1s;
+        z-index:-2;
+        mask url(./Assets/cssMask.png)
+        transition: width 1s,height 1s;
         top:10vw;
         left:5vw;
         width:5vw;
@@ -79,7 +79,7 @@
       }
       #shareAnim{
         position:absolute;
-        z-index:-2;
+        z-index:-3;
         top:10vw;
         left:5vw;
         width:5vw;
