@@ -14,6 +14,8 @@
       let resp=JSON.parse(decodeURI(getParams('resp')))
       document.title=resp.title;
       window.onload=()=>{
+        var md = new Remarkable();
+        console.log(md.render('# Remarkable rulezz!'));
       }
     </script>
     <style>
