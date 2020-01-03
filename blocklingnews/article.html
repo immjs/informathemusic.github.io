@@ -17,58 +17,9 @@
       }
     </script>
     <style>
-      /*#l1{
-        -webkit-mask-image: url(./Assets/cssMask.png);
-        position:absolute;
-        z-index:-2;
-        transition: width 1s,height 1s;
-        top:5vw;
-        left:5vw;
-        width:5vw;
-        height:5vw;
-        background-color:grey;
-      }*/
-      #coverLiveAnim{
+      .cover{
         position:absolute;
         z-index:-1;
-        border-radius: 50%;
-        transition: width 1s,height 1s;
-        top:75px;
-        left:75px;
-        width:75px;
-        height:75px;
-        background-color:grey;
-      }
-      #likeAnim{
-        position:absolute;
-        z-index:-3;
-        border-radius: 50%;
-        transition: width 1s 0.25s,height 1s 0.25s;
-        top:75px;
-        left:75px;
-        width:75px;
-        height:75px;
-      }
-      #like{
-        position:absolute;
-        z-index:0;
-        top:75px;
-        left:75px;
-        width:75px;
-        height:75px;
-      }
-      /*#l1{
-        -webkit-mask-image: url(./Assets/cssMask.png);
-        position:absolute;
-        z-index:-2;
-        transition: width 1s,height 1s;
-        top:5vw;
-        left:5vw;
-        width:5vw;
-        height:5vw;
-        background-color:grey;
-      }*/
-      .cover{
         transition: width 1s,height 1s;
         width:75px;
         height:75px;
@@ -81,28 +32,30 @@
         width:75px;
         height:75px;
       }
+      .frontImg{
+        position:absolute;
+        z-index:0;
+        transform:translate(5px,5px);
+        width:65px;
+        height:65px;
+      }
+      .l{
+        top:75px;
+        left:75px;
+      }
       .s{
         top:175px;
         left:75px;
       }
-      #coverShareAnim{
-        position:absolute;
-        z-index:-1;
-        background-color:grey;
-      }
-      #share{
-        position:absolute;
-        z-index:0;
-      }
     </style>
   </head>
   <body>
-    <div id="likeAnimCover" class="l"></div>
-    <img id="likeAnim" src="./Assets/likeAnim.jpg" class="l" />
-    <img id="like" src="./Assets/like.png" class="l" />
-    <div id="shareAnimCover" class="s"></div>
-    <img id="shareAnim" src="" class="s" />
-    <img id="share" src="" class="s" />
+    <div id="likeAnimCover" class="l cover"></div>
+    <img id="likeAnim" src="./Assets/likeAnim.jpg" class="l anim" />
+    <img id="like" src="./Assets/like.png" class="l frontImg" />
+    <div id="shareAnimCover" class="s cover"></div>
+    <img id="shareAnim" src="" class="s anim" />
+    <img id="share" src="" class="s frontImg" />
     <div id="content">
       
     </div>
