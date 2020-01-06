@@ -14,7 +14,7 @@
       let resp=JSON.parse(decodeURI(getParams('resp')))
       document.title=resp.title;
       window.onload=()=>{
-        document.getElementById('content').innerHtml=new Remarkable().render(resp.article);
+        document.getElementById('content').innerHTML=new Remarkable().render(resp.article);
         console.log("aaaaaaa")
       }
     </script>
