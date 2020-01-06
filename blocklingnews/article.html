@@ -15,7 +15,7 @@
       document.title=resp.title;
       window.onload=()=>{
         var md = new Remarkable();
-        console.log(md.render('# Remarkable rulezz!'));
+        document.getElementById('content').innerHtml=md.render(resp.article);
       }
     </script>
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e0f500ea7650f00122a6ebd&product=inline-reaction-buttons&cms=sop' async='async'></script>
