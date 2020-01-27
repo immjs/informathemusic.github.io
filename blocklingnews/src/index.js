@@ -69,7 +69,7 @@ xhr.onload = async function() {
     var p = document.createElement("div");
     content.appendChild(p);
     p.outerHTML =
-        '<a href="./Articles/Article'+i+'" class="article" style="background-color:'+colors[r]+';box-shadow: 1vw 1vw '+uColors[r]+'">'+
+        '<a href="./article.html?resp='+i+'" class="article" style="background-color:'+colors[r]+';box-shadow: 1vw 1vw '+uColors[r]+'">'+
             '<h3 class="article__title">'+(i===k?"Nouveau: ":"")+data[i-1].id+'</h3>'+
             '<p class="article__content">'+data[i-1].summary.split('\n').join('</br>')+'</p>'+
         '</a>'
