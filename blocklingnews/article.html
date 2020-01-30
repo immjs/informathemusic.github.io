@@ -1,90 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <!--<title>Blockling News S2 e5</title>-->
+    <meta charset="utf-8" />
+
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/ec1d107f-cb19-4882-b1b5-b930be8574c4%2Fdidier.png?v=1578311549475" type="image/x-icon"    />
+
+    <link rel="stylesheet" href="/src/articleStyle.css" />
     <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-    <script>
-      function getParams( name, url ) {
-        if (!url) url = location.href;
-        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-        var regexS = "[\\?&]"+name+"=([^&#]*)";
-        var regex = new RegExp( regexS );
-        var results = regex.exec( url );
-        return results == null ? null : results[1];
-      }
-      let resp=JSON.parse(decodeURI(getParams('resp')))
-      document.title=resp.title;
-      window.onload=()=>{
-        document.getElementById('content').innerHTML=new Remarkable().render(resp.article);
-        console.log("aaaaaaa")
-      }
-    </script>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e0f500ea7650f00122a6ebd&product=inline-reaction-buttons&cms=sop' async='async'></script>
-    <style>
-      .cover{
-        position:absolute;
-        z-index:-1;
-        transition: width 1s,height 1s;
-        width:75px;
-        height:75px;
-      }
-      .anim{
-        position:absolute;
-        z-index:-3;
-        border-radius: 50%;
-        transition: width 1s 0.25s,height 1s 0.25s;
-        width:75px;
-        height:75px;
-      }
-      .frontImg{
-        position:absolute;
-        z-index:0;
-        transform:translate(15px,15px);
-        width:45px;
-        height:45px;
-      }
-      .l{
-        top:75px;
-        left:75px;
-      }
-      .s{
-        top:175px;
-        left:75px;
-      }
-      .s .frontImg{
-        transform:translate(7px,15px);
-        width:45px;
-        height:45px;
-      }
-      /*.sharethis-inline-reaction-buttons{
-        position:absolute;
-        left:50vw;
-        transform:translate(-50%,0);
-      }
-      .sharethis-inline-share-buttons{
-        position:absolute;
-        left:1vw;
-        width:100vw;
-      }
-      .sharethis-inline-follow-buttons{
-        position:absolute;
-        left:100vw;
-        width:100vw;
-        transform:translate(-100%,0);
-      }*/
-    </style>
+    <script src="/src/articleScript.js" defer></script>
+    <meta name="keywords" content="BlocklingNews,Journal,Minecraft,Mcmoddé,minecraftmoddé,article">
+    <meta name="description" content="L'article 5 du journal sur les episodes de minecraft moddé de Fuze">
   </head>
   <body>
-    <div class="sharethis-inline-reaction-buttons"></div>
-    <div class="sharethis-inline-share-buttons"></div>
-    <div class="sharethis-inline-follow-buttons"></div>
-    <!--<div id="likeAnimCover" class="l cover"></div>
-    <img id="likeAnim" src="./Assets/likeAnim.jpg" class="l anim" />
-    <img id="like" src="./Assets/like.png" class="l frontImg" />
-    <div id="shareAnimCover" class="s cover"></div>
-    <img id="shareAnim" src="./Assets/shareAnim.png" class="s anim" />
-    <img id="share" src="./Assets/share.png" class="s frontImg" />-->
-    <div id="content">
-      
-    </div>
+    <div id="content"></div>
   </body>
 </html>
