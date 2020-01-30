@@ -1,0 +1,10 @@
+body{
+  font-family: Arial;
+  line-height: 150%;
+}
+#content{
+  padding:1vw;
+  width:50vw;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 5px -4px rgba(201, 201, 201, 0.8), -12px 0 5px -4px rgba(201, 201, 201, 0.8);
+  transform:translate(24vw,0vw)
+}
